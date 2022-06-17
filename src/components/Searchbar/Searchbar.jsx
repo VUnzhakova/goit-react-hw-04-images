@@ -16,7 +16,7 @@ const Searchbar = ({ onSubmit }) => {
   const handleSubmit = e => {
     e.preventDefault();
     if (search.trim() === '') {
-      return toast.info('Пожалуйста введите запрос!');
+      return toast.info('Введите пожалуйста запрос!');
     }
     onSubmit(search);
     setSearch('');
